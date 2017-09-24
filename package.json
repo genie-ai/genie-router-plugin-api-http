@@ -1,0 +1,34 @@
+{
+  "name": "genie-router-plugin-api-http",
+  "version": "1.0.0",
+  "description": "A genie-router plugin that provides a generic HTTP API for external clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matueranet/genie-router-plugin-api-http.git"
+  },
+  "keywords": [
+    "plugin",
+    "http",
+    "api",
+    "rest",
+    "genie-router"
+  ],
+  "author": "matueranet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matueranet/genie-router-plugin-api-http/issues"
+  },
+  "homepage": "https://github.com/matueranet/genie-router-plugin-api-http#readme",
+  "genieRouterPlugin": {
+    "name": "api-http"
+  },
+  "dependencies": {
+    "debug": "^3.0.1",
+    "standard": "^10.0.3",
+    "uuidv4": "^0.5.0"
+  }
+}
