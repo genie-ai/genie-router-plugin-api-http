@@ -4,7 +4,7 @@
   "description": "A genie-router plugin that provides a generic HTTP API for external clients.",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && istanbul cover --include-all-sources true _mocha test/**/*.test.js --reporter=html -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,13 @@
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "standard": "^10.0.3",
-    "uuidv4": "^0.5.0"
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "proxyquire": "^1.8.0",
+    "sinon": "^3.3.0",
+    "standard": "^10.0.3"
   }
 }
