@@ -45,6 +45,10 @@ include a `metadata` attribute which will be returned in the response.
 }
 ```
 
+If you add the attribute `userId` and/or `sessionId` in the request metadata this
+will be mapped to the internal userId and sessionId in genie-router, where they can be used
+by other plugins.
+
 The responses will contain a unique identifier for each request, in the `id` attribute.
 
 ## Valid response

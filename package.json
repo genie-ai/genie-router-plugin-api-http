@@ -1,6 +1,6 @@
 {
   "name": "genie-router-plugin-api-http",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A genie-router plugin that provides a generic HTTP API for external clients.",
   "main": "index.js",
   "scripts": {
