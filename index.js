@@ -1,5 +1,5 @@
-const http = require('./lib/http')
-const client = require('./lib/client')
+const http = require('./lib/http');
+const client = require('./lib/client');
 
 /**
  * This plugin exposes itself as both a http and a client plugin, in order to be
@@ -9,6 +9,6 @@ const client = require('./lib/client')
  * and sending a reply.
 */
 module.exports = {
-  http: http,
-  client: client
-}
+    http,
+    client,
+};

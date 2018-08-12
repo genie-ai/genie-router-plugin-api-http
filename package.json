@@ -1,14 +1,14 @@
 {
-  "name": "genie-router-plugin-api-http",
-  "version": "1.1.0",
+  "name": "@genie-ai/genie-router-plugin-api-http",
+  "version": "2.0.0",
   "description": "A genie-router plugin that provides a generic HTTP API for external clients.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && istanbul cover --include-all-sources true _mocha test/**/*.test.js --reporter=html -- -R spec"
+    "test": "eslint . && _mocha test/**/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matueranet/genie-router-plugin-api-http.git"
+    "url": "git+https://github.com/genie-ai/genie-router-plugin-api-http.git"
   },
   "keywords": [
     "plugin",
@@ -20,21 +20,23 @@
   "author": "matueranet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matueranet/genie-router-plugin-api-http/issues"
+    "url": "https://github.com/genie-ai/genie-router-plugin-api-http/issues"
   },
-  "homepage": "https://github.com/matueranet/genie-router-plugin-api-http#readme",
+  "homepage": "https://github.com/genie-ai/genie-router-plugin-api-http#readme",
   "genieRouterPlugin": {
-    "name": "api-http"
+    "name": "api-http",
+    "apiVersion": "1.0.0"
   },
   "dependencies": {
     "debug": "^3.0.1",
-    "uuid": "^3.1.0"
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "mocha": "^3.5.3",
-    "proxyquire": "^1.8.0",
-    "sinon": "^3.3.0",
-    "standard": "^10.0.3"
+    "mocha": "^5.2.0",
+    "proxyquire": "^2.0.1",
+    "sinon": "^6.1.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.9.0"
   }
 }
